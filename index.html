@@ -13,8 +13,7 @@
     <div id="main">
       <div
         hx-get="https://raw.githubusercontent.com/grabbiel/h1b-sponsor-check/main/modules/popup/html/buttons/feedbackBtn.html"
-        hx-swap="outerHTML"
-        hx-trigger="click"
+        hx-on="htmx:configRequest: event.detail.headers=''; event.detail.headers['Content-Type']='application/x-wwww-form-urlencoded; charset=UTF-8'"
       >
         Click on me
       </div>
