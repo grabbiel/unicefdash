@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TESTING</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./static/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="./static/htmx.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div
+        hx-get="https://raw.githubusercontent.com/grabbiel/h1b-sponsor-check/main/modules/popup/html/buttons/feedbackBtn.html"
+        hx-swap="outerHTML"
+        hx-trigger="click"
+      >
+        Click on me
+      </div>
+      <div id="swapped" height="200px">This will be swapped</div>
+    </div>
+  </body>
+</html>
