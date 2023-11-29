@@ -5,19 +5,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="htmx-config" content='{"selfRequestOnly": "false"; }' />
-    <link href="./static/style.css" rel="stylesheet" />
-    <script type="text/javascript" src="./static/htmx.min.js"></script>
     <script type="text/javascript" src="./static/js/htmx_config.js"></script>
+    <link href="./static/style.css" rel="stylesheet" />
   </head>
   <body>
     <div id="main">
-      <div
-        hx-get="https://raw.githubusercontent.com/grabbiel/h1b-sponsor-check/main/modules/popup/html/buttons/feedbackBtn.html"
-        hx-on="htmx:configRequest: event.detail.headers=''; event.detail.headers['Content-Type']='application/x-wwww-form-urlencoded; charset=UTF-8'"
-      >
-        Click on me
-      </div>
-      <div id="swapped" height="200px">This will be swapped</div>
+      <h1>Europe and Central Asia Child Rights Monitoring Framework</h1>
+      <section
+        id="domain-child-rights-landscape-governance"
+        class="domain-entity"
+        geturl="/static/html/domain_crlg.html"
+      ></section>
+      <section
+        id="domain-health-nutrition"
+        class="domain-entity"
+        geturl="/static/html/domain_crlg.html"
+      ></section>
+      <section
+        id="domain-poverty-adequate-standard-living"
+        class="domain-entity"
+        geturl="/static/html/domain_crlg.html"
+      ></section>
+      <section
+        id="domain-family-environment-protection"
+        class="domain-entity"
+        geturl="/static/html/domain_crlg.html"
+      ></section>
+      <section
+        id="domain-education-leisure-culture"
+        class="domain-entity"
+        geturl="/static/html/domain_crlg.html"
+      ></section>
+      <section
+        id="domain-participation-civil-rights"
+        class="domain-entity"
+        geturl="/static/html/domain_crlg.html"
+      ></section>
+      <section
+        id="domain-cross-cutting"
+        class="domain-entity"
+        geturl="/static/html/domain_crlg.html"
+      ></section>
     </div>
   </body>
 </html>

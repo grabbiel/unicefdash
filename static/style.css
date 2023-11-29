@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#svg-defs {
+  display: none;
+}
+#main {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  border: solid black 3px;
+}
+.svg-subdomain-logo-path-drawing {
+  fill: white;
+}
+.domain-entity {
+  width: 90%;
+  height: fit-content;
+  background-color: pink;
+  border-radius: 3vh;
+  padding: 2vh 0vw;
+  margin: 3vh auto;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+#domain-child-rights-landscape-governance {
+  background-color: #ede8f0;
+}
+#domain-child-rights-landscape-governance .svg-subdomain-logo-path-container {
+  fill: #74387d;
+}
+#domain-health-nutrition {
+  /*rgb(-121, -176, -115)*/
+  background-color: rgb(134, 211, 209);
+}
+#domain-health-nutrition .svg-subdomain-logo-path-container {
+  fill: rgb(0, 132, 69);
+}
+#domain-poverty-adequate-standard-living {
+  background-color: rgb(120, 169, 203);
+}
+#domain-poverty-adequate-standard-living .svg-subdomain-logo-path-container {
+  fill: rgb(75, 140, 184);
+}
+#domain-family-environment-protection .svg-subdomain-logo-path-container {
+  fill: #e5ae4b;
+}
+#domain-family-environment-protection {
+  background-color: rgb(235, 194, 120);
+}
+#domain-education-leisure-culture .svg-subdomain-logo-path-container {
+  fill: #37568f;
+}
+#domain-education-leisure-culture {
+  background-color: rgb(105, 128, 171);
+}
+#domain-participation-civil-rights .svg-subdomain-logo-path-container {
+  fill: #961a49;
+}
+#domain-participation-civil-rights {
+  background-color: rgb(176, 83, 118);
+}
+#domain-cross-cutting .svg-subdomain-logo-path-container {
+  fill: rgb(244, 133, 72);
+}
+#domain-cross-cutting {
+  background-color: rgb(255, 240, 232);
+}
+.domain-title {
+  height: 7.5vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.domain-title-text {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.domain-title-text h2 {
+  font-size: 3vh;
+}
+.domain-information {
+  width: 3vh;
+  height: 3vh;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1vw;
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bolder;
+}
+.domain-information:hover {
+  border: none;
+}
+
+.domain-description {
+  width: 80%;
+  height: fit-content;
+  margin: 3vh 0;
+  overflow: hidden;
+  background-color: transparent;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.domain-crc {
+  width: 20%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.domain-crc-img {
+  width: 100%;
+  height: 100%;
+}
+.domain-crc-img img {
+  width: auto;
+  height: 100%;
+}
+.domain-description-content {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.domain-description-text {
+  width: 100%;
+  height: fit-content;
+}
+.domain-description-text span {
+  font-size: 2vh;
+}
+.domain-sdg {
+  width: 90%;
+  height: fit-content;
+  margin: 1vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.domain-sdg-img {
+  height: 10vh;
+  width: auto;
+  margin: 0 1vw;
+}
+.domain-sdg-img img {
+  height: 100%;
+  width: auto;
+}
+
+.modal-box {
+  z-index: 1;
+  position: fixed;
+  padding-top: 30vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0, 0.4);
+}
+.modal-box-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 80%;
+  height: fit-content;
+  overflow: hidden;
+  padding: 2.5vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.modal-box-close {
+  width: 90%;
+  display: flex;
+  flex-direction: flex-end;
+}
+.modal-box-close span {
+  font-weight: bold;
+  font-size: 3vh;
+  color: #aaaaaa;
+}
+
+.modal-box-close span : hover,
+.modal-box-close span : focus {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.modal-box-img {
+  width: 20%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.modal-box-img {
+  height: 90%;
+  width: auto;
+}
+.modal-box-text {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-box-text span {
+  font-size: 2.5vh;
+}
+
+.domain-subdomains {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subdomain-entity {
+  height: fit-content;
+  margin: 1.125vh auto;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+.subdomain-logo {
+  width: auto;
+  height: 18.225vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.svg-subdomain-logo {
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.subdomain-title {
+  width: 95%;
+  margin: 0 auto;
+  height: fit-content;
+  max-height: 7vh;
+  overflow: hidden;
+  text-align: center;
+}
+.subdomain-title span {
+  font-size: 1.5vh;
+}
+.subdomain-description {
+  width: 75%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subdomain-description-text {
+  width: 90%;
+  height: fit-content;
+  text-align: left;
+}
+.subdomain-description-text span {
+  font-size: 3vmin;
+  text-align: left;
+}
+.subdomain-crc {
+  width: 90%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.subdomain-crc-img {
+  width: 20%;
+  height: 65%;
+  overflow: hidden;
+}
+.subdomain-crc-img img {
+  height: 100%;
+  width: auto;
+}
+#domain-child-rights-landscape-governance .subdomain-entity {
+}
