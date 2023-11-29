@@ -31,7 +31,7 @@ const removeSubdomainDescription = (htmlobj) => {
 const fetchSubdomainDescription = async (htmlobj) => {
   response = await fetch(htmlobj.getAttribute("getmoreurl"));
   htmlobj.parentNode.insertAdjacentHTML("beforeend", await response.text());
-  window.location.href = "/#" + htmlobj.parentNode.parentNode.id;
+  window.location.href = "/unicefdash/#" + htmlobj.parentNode.parentNode.id;
 };
 
 const updateViewMode = (htmlobj) => {
@@ -108,14 +108,14 @@ const domainRenderDescribe = (evt) => {
     ".domain-description",
   );
   switchViewDomainDescribe(htmlelement);
-  window.location.href = "/#" + htmlelement.parentNode.id;
+  window.location.href = "/unicefdash/#" + htmlelement.parentNode.id;
   removeAllSubdomainDescription(htmlelement.parentNode);
 };
 const domainLoadDescribe = async (evt) => {
   htmlelement = evt.currentTarget;
   response = await fetch(htmlelement.getAttribute("geturl"));
   htmlelement.parentNode.insertAdjacentHTML("afterend", await response.text());
-  window.location.href = "/#" + htmlelement.parentNode.parentNode.id;
+  window.location.href = "/unicefdash/#" + htmlelement.parentNode.parentNode.id;
   htmlelement.removeEventListener("click", domainLoadDescribe);
   htmlelement.addEventListener("click", domainRenderDescribe);
   removeAllSubdomainDescription(htmlelement.parentNode.parentNode);
