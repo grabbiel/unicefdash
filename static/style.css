@@ -232,6 +232,7 @@ body {
   height: fit-content;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -250,6 +251,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .svg-subdomain-logo {
   width: auto;
@@ -267,6 +269,62 @@ body {
 }
 .subdomain-title span {
   font-size: 1.5vh;
+}
+.btn-indicator {
+  background-color: grey;
+  border-radius: 3vh;
+  color: white;
+  font-size: 1.5vh;
+  margin: 0.5vh auto;
+  padding: 0.5vh 0;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  width: 80%;
+}
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  font-size: 2.5vmin;
+  width: 90%;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 2.5vmin;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+.subdomain-description-summary {
+  margin: 2.5vh auto;
+  width: 90%;
+}
+.subdomain-description-summary span {
+  font-size: 3vmin;
+}
+.modal-indicators h4 {
+  font-size: 3vmin;
+}
+.modal-indicators button {
+  background-color: grey;
+  border-radius: 3vh;
+  color: white;
+  font-size: 2vmin;
+  margin: 0.5vh auto;
+  padding: 0.5vh 0;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  width: 80%;
 }
 .subdomain-description {
   width: 75%;
